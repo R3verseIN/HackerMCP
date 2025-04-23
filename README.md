@@ -87,5 +87,4 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 No warranty is provided with this software. The creator is not responsible for any unethical or illegal use of this tool. Users are solely responsible for ensuring they have proper authorization before conducting any security testing activities.
 
 ## License
-
-[MIT License](LICENSE)
+[GNU GPL v3 License](LICENSE)
