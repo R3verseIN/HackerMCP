@@ -1,0 +1,7 @@
+aiofiles==24.1.0
+mcp>=0.1.0
+requests==2.32.3
+python-dotenv==1.0.1
+subprocess-tee>=0.4.1
+asyncio==3.4.3
+time-machine>=2.12.0
