@@ -5,11 +5,11 @@ HackerMCP is a module built for AI assistants to access and utilize common penet
 ## Currently Supported Tools
 
 - **Nmap**: Network discovery and security auditing
+- **SQLMap**: SQL injection detection and exploitation
 - **Metasploit Framework**: Penetration testing framework
 
 ## Future Goals
 
-- Add support for SQLMap
 - Expand available security tools and capabilities
 
 ## Installation
@@ -39,6 +39,7 @@ Replace `~/dir/to/hackermcp` with the actual path to the hackermcp directory.
 ### Prerequisites
 - Python 3.8 or higher
 - Nmap installed on your system
+- SQLMap installed on your system
 - Metasploit Framework installed on your system
 
 ### Virtual Environment Setup

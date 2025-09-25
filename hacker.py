@@ -62,6 +62,19 @@ async def nmapscan(command: str) -> str:
         return f"Error executing nmap command: {e}\n{e.stderr}"
 
 @mcp.tool()
+async def sqlmapscan(command: str) -> str:
+    """Perform SQL injection testing using sqlmap
+    
+    Args:
+        command: sqlmap command to run (e.g., "-u http://example.com/page.php?id=1 --dbs") as sqlmap is already there no need to mention sqlmap
+    """
+    try:
+        result = subprocess.run(f"sqlmap {command}", shell=True, check=True, capture_output=True, text=True)
+        return result.stdout
+    except subprocess.CalledProcessError as e:
+        return f"Error executing sqlmap command: {e}\n{e.stderr}"
+
+@mcp.tool()
 async def create_tmux_session(session_name: str = "msf_session") -> str:
     """Create a new tmux session.
     
